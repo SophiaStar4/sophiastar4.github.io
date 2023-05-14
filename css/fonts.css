@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Phantom Cyr';
+    src: url('../fonts/Phantom Cyr/phantomcyr_lat.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Phantom Cyr';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Phantom Cyr';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Phantom Cyr';
+    src: url('../fonts/Roboto/Roboto-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+}

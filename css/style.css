@@ -1,0 +1,177 @@
+/* Обнуление ----------------------------------------------------- */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Общее ----------------------------------------------------- */
+
+html, body {
+    color: #E7E5E5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #1D1417;
+}
+
+._wrapper {
+    min-height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+._container {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 12px;
+    box-sizing: content-box;
+}
+
+[class$='_inner'] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.img_container > img {
+    width: 100%;
+    height: 100%;
+}
+
+.img_container > img {
+    object-fit: cover;
+}
+
+.logotype.img_container > img{
+    object-fit: contain;
+}
+
+/* Шапка ----------------------------------------------------- */
+
+._wrapper > header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #1d1417d6;
+    backdrop-filter: blur(8px);
+}
+
+header > ._container {
+    z-index: 20;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.logotype {
+    width: 25%;
+}
+
+.main-menu > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10%;
+}
+
+/* Главная секция ----------------------------------------------------- */
+
+.front-page {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #1D141700 0%, #1D1417 100%) no-repeat bottom center / 100% 28%,
+        url('../img/ichigo-kurosaki-orihime-inoue-yasutora-sado-uryu-ishida-renj.jpg') no-repeat top center / cover;
+}
+
+/* Персонажи ----------------------------------------------------- */
+
+.tag-heading {
+    padding: 24px;
+    /* border-radius: 100% 100% 0 0; */
+    font-size: 24px;
+    background-color: #D04B36;
+}
+
+.articles_container {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+}
+
+.charecters_inner article {
+    position: relative;
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.charecters_inner .img_container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    filter: brightness(12%) blur(12px);
+    transition: filter 300ms;
+}
+
+.charecters_inner h3 {
+    position: relative;
+    z-index: 20;
+    padding: 20px;
+    font-family: 'Phantom Cyr', cursive;
+    font-size: 32px;
+    transition: all 500ms;
+}
+
+.charecters_inner .img_container:hover {
+    filter: brightness(100%) blur(0);
+}
+
+.charecters_inner .img_container:hover + h3 {
+    align-self: flex-end;
+}
